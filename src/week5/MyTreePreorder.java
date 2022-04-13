@@ -16,7 +16,7 @@ public class MyTreePreorder {
             }
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         MyTree tree = new MyTree();
         MyNode root = tree.addRoot("Make Money Fast!");
 

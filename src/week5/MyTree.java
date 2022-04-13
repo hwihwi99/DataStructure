@@ -43,7 +43,7 @@ public class MyTree {
         return newRoot;
     }
 
-    public MyNode addNode(Object e) { // 기존 루트 노드에 새로운 자식 추가
+    public MyNode addNode(Object e) throws Exception { // 기존 루트 노드에 새로운 자식 추가
         MyNode newChild = new MyNode(e);
         ArrayList newChildArray = new ArrayList();
         newChild.setChildren(newChildArray);

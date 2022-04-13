@@ -18,7 +18,7 @@ public class MyTreePostorder {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         MyTree tree = new MyTree("cs16/");
 
         MyNode homework = tree.addNode("homeworks/");
