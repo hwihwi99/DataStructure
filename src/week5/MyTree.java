@@ -11,7 +11,7 @@ public class MyTree {
     }
 
     public MyTree(Object element) {
-        root= new MyNode(element);
+        root= new MyBinNode(element);
         root.setChildren(new ArrayList());
         size = 1;
     }
@@ -44,7 +44,7 @@ public class MyTree {
     }
 
     public MyNode addNode(Object e) throws Exception { // 기존 루트 노드에 새로운 자식 추가
-        MyNode newChild = new MyNode(e);
+        MyNode newChild = new MyBinNode(e);
         ArrayList newChildArray = new ArrayList();
         newChild.setChildren(newChildArray);
         root.children().add(newChild);
@@ -78,7 +78,7 @@ public class MyTree {
         if(v.children().size() < i || i <0) {
             throw new Exception(i+"번째 인덱스에 값을 추가할 수 없습니다.");
         }
-        MyNode newChild = new MyNode(e);
+        MyNode newChild = new MyBinNode(e);
         ArrayList newChildArray = new ArrayList();
         newChild.setChildren(newChildArray);
         v.children().add(i, newChild);

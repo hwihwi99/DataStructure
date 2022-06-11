@@ -5,7 +5,7 @@ import week5.MyBinTree;
 public class TreeApplication {
 
     public static void main(String[] args) throws Exception {
-        MyBinTree myBinTree = new MyBinTree('+');
+        MyBinTree myBinTree = new MyBinTree("+");
         myBinTree.addNode("X");
         myBinTree.addNode("X");
         myBinTree.insertLeft(myBinTree.root().left(),"2");
